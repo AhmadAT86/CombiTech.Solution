@@ -47,10 +47,14 @@ namespace CombiTech.Solution.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Description,ProjectOnwerId,Created,Active")] ToDo toDo)
+        public ActionResult Create(ToDo toDo)
         {
             if (ModelState.IsValid)
             {
+
+                toDo.Created = DateTime.Now;
+                toDo.ProjectStructures = new List<ProjectStructure>();
+
                 db.ToDos.Add(toDo);
                 db.SaveChanges();
                 return RedirectToAction("Index");

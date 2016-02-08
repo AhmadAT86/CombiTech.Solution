@@ -14,6 +14,7 @@ namespace CombiTech.Solution.Models
         public string Description { get; set; }
         public string ProjectOnwerId { get; set; }
         public DateTime Created { get; set; }
+        public DateTime FinishedTime { get; set; }
         public bool Active { get; set; }
         public List<ProjectStructure> ProjectStructures { get; set; }
 
