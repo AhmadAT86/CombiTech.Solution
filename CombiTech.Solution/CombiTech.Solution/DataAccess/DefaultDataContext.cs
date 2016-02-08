@@ -12,6 +12,7 @@ namespace CombiTech.Solution.DataAccess
     public class DefaultDataContext : DbContext
     {
         public DbSet<ToDo> ToDos { get; set; }
+        public DbSet<ProjectStructure> ProjectStructures { get; set; } 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

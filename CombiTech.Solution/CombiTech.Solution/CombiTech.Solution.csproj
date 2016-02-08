@@ -156,12 +156,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ToDoController.cs" />
+    <Compile Include="Controllers\ProjectStructuresController.cs" />
+    <Compile Include="Controllers\ToDoesController.cs" />
     <Compile Include="DataAccess\DefaultDataContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ProjectStructure.cs" />
     <Compile Include="Models\ToDo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -206,11 +207,17 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\ToDo\Index.cshtml" />
-    <Content Include="Views\ToDo\New.cshtml" />
-    <Content Include="Views\ToDo\Details.cshtml" />
-    <Content Include="Views\ToDo\Edit.cshtml" />
-    <Content Include="Views\ToDo\Delete.cshtml" />
+    <Content Include="Views\ProjectStructure\Index.cshtml" />
+    <Content Include="Views\ProjectStructures\Create.cshtml" />
+    <Content Include="Views\ProjectStructures\Delete.cshtml" />
+    <Content Include="Views\ProjectStructures\Details.cshtml" />
+    <Content Include="Views\ProjectStructures\Edit.cshtml" />
+    <Content Include="Views\ProjectStructures\Index.cshtml" />
+    <Content Include="Views\ToDoes\Create.cshtml" />
+    <Content Include="Views\ToDoes\Delete.cshtml" />
+    <Content Include="Views\ToDoes\Details.cshtml" />
+    <Content Include="Views\ToDoes\Edit.cshtml" />
+    <Content Include="Views\ToDoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
