@@ -10,54 +10,59 @@
     @Html.ActionLink("Add new project", "New")
 </p>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Created)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Active)
-        </th>
-
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        var activeClass = "glyphicon {0}";
-        if (item.Active)
-        {
-            activeClass = String.Format(activeClass, "glyphicon-tumbs-up");
-        }
-        else
-        {
-            {
-                activeClass = String.Format(activeClass, "glyhicon-thumbs-down");
-            }
-        }
+    <thead>
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Created)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Active)
-            </td>
-            <td>
-                <a href="@Url.Action("ToggleState", "ToDo", new {id = item.Id})">
-                    <span class="@activeClass"></span>
-                </a>
-            </td>
-
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Created)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
         </tr>
-    }
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            var activeClass = "glyphicon {0}";
+            if (item.Active)
+            {
+                activeClass = String.Format(activeClass, "glyphicon-tumbs-up");
+            }
+            else
+            {
+                {
+                    activeClass = String.Format(activeClass, "glyhicon-thumbs-down");
+                }
+            }
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Created)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Active)
+                </td>
+                <td>
+                    <a href="@Url.Action("ToggleState", "ToDo", new { id = item.Id })">
+                        <span class="@activeClass"></span>
+                    </a>
+                </td>
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
 
 </table>
