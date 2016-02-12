@@ -4,10 +4,10 @@ using System.Linq;
 using System.Data.Entity;
 using System.Web;
 using CombiTech.Solution.Models;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace CombiTech.Solution.DataAccess
 {
-    using System.Data.Entity.ModelConfiguration.Conventions;
 
     public class DefaultDataContext : DbContext
     {
