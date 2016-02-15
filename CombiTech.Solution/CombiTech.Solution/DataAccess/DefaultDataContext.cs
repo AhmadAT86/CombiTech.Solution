@@ -22,3 +22,4 @@ namespace CombiTech.Solution.DataAccess
         }
     }
 }
+    // kunde skicka en sträng med all info men det kommer upp i fel ordning 
