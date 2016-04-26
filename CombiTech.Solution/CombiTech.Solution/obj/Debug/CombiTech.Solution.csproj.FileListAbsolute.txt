@@ -112,3 +112,6 @@ C:\projekt\CombiTech.Solution\CombiTech.Solution\CombiTech.Solution\bin\Newtonso
 C:\projekt\CombiTech.Solution\CombiTech.Solution\CombiTech.Solution\obj\Debug\CombiTech.Solution.csprojResolveAssemblyReference.cache
 C:\projekt\CombiTech.Solution\CombiTech.Solution\CombiTech.Solution\obj\Debug\CombiTech.Solution.dll
 C:\projekt\CombiTech.Solution\CombiTech.Solution\CombiTech.Solution\obj\Debug\CombiTech.Solution.pdb
+C:\Testing Sourcestream\CombiTech.Solution\CombiTech.Solution\obj\Debug\CombiTech.Solution.csprojResolveAssemblyReference.cache
+C:\Testing Sourcestream\CombiTech.Solution\CombiTech.Solution\obj\Debug\CombiTech.Solution.dll
+C:\Testing Sourcestream\CombiTech.Solution\CombiTech.Solution\obj\Debug\CombiTech.Solution.pdb

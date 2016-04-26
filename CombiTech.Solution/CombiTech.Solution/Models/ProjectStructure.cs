@@ -13,3 +13,5 @@ namespace CombiTech.Solution.Models
         public DateTime DateTime { get; set; }
     }
 }
+
+        // TESTAR UPP KOPPLINGEN MOT SORUCE TREE
